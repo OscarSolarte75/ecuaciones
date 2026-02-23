@@ -9,14 +9,12 @@ tipo = st.selectbox(
     ["Lineal (ax + b = 0)", "Cuadrática (ax² + bx + c = 0)"]
 )
 
-# ==========================
 # ECUACIÓN LINEAL
-# ==========================
 
 if tipo == "Lineal (ax + b = 0)":
     st.subheader("Ecuación de la forma ax + b = 0")
 
-    a = st.number_input("Ingrese el valor de a:", value=1.0)
+    a = st.number_input("Ingrese el valor de a:", value=0.0)
     b = st.number_input("Ingrese el valor de b:", value=0.0)
 
     if st.button("Resolver Lineal"):
@@ -38,14 +36,12 @@ if tipo == "Lineal (ax + b = 0)":
             ax_plot.set_title("Gráfica de la ecuación lineal")
             st.pyplot(fig)
 
-# ==========================
 # ECUACIÓN CUADRÁTICA
-# ==========================
 
 if tipo == "Cuadrática (ax² + bx + c = 0)":
     st.subheader("Ecuación de la forma ax² + bx + c = 0")
 
-    a = st.number_input("Ingrese el valor de a:", value=1.0, key="a2")
+    a = st.number_input("Ingrese el valor de a:", value=0.0, key="a2")
     b = st.number_input("Ingrese el valor de b:", value=0.0, key="b2")
     c = st.number_input("Ingrese el valor de c:", value=0.0, key="c2")
 
