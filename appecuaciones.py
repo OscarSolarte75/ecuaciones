@@ -25,7 +25,7 @@ if tipo == "Lineal (ax + b = 0)":
             st.success(f"La solución es: x = {x}")
 
             # Gráfica
-            x_vals = np.linspace(x - 10, x + 10, 400)
+            x_vals = np.linspace(x - 1, x + 1, 400)
             y_vals = a * x_vals + b
 
             fig, ax_plot = plt.subplots()
