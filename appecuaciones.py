@@ -68,7 +68,7 @@ if tipo == "Cuadrática (ax² + bx + c = 0)":
                 st.warning("No tiene soluciones reales (discriminante negativo).")
 
             # Gráfica
-            x_vals = np.linspace(-10, 10, 400)
+            x_vals = np.linspace(-1, 1, 400)
             y_vals = a*x_vals**2 + b*x_vals + c
 
             fig, ax_plot = plt.subplots()
